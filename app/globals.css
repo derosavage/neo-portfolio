@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #060816;
+  color: #edf2ff;
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+::selection {
+  background: rgba(97, 240, 207, 0.3);
+  color: #ffffff;
+}
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+}
+
+@layer utilities {
+  .panel-outline {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.04),
+      0 24px 60px rgba(0, 0, 0, 0.3);
+  }
+}

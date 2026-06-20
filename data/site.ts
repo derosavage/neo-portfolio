@@ -19,8 +19,8 @@ export type JourneyStep = {
 };
 
 export const siteConfig = {
-  name: "Dero Savage",
-  location: "Nairobi, Kenya",
+  name: "DERRICK",
+  location: "Nandi, Kenya",
   role: "Full-Stack Developer | AI Systems Builder | Automation Enthusiast",
   tagline: "I build intelligent systems, full-stack products, and automation tools.",
   intro:
@@ -29,9 +29,9 @@ export const siteConfig = {
     "My work sits at the intersection of backend engineering, AI integration, and product thinking. I enjoy turning complex workflows into usable systems, whether that means building APIs, orchestrating agents, shaping data layers, or connecting automation into everyday products.",
   vision:
     "I want to build scalable systems, intelligent products, and useful tools that create real leverage. Long term, I am focused on technology that compounds: better infrastructure, smarter automation, and financially empowering products built with discipline.",
-  email: "derosavage@example.com",
-  github: "https://github.com/your-username",
-  linkedin: "https://linkedin.com/in/your-linkedin",
+  email: "derosavage3045@gmail.com",
+  github: "https://github.com/derosavage",
+  linkedin: "https://linkedin.com/in/derosavage",
   cta: {
     projects: "#projects",
     contact: "#contact",
@@ -75,8 +75,8 @@ export const siteConfig = {
         "Admin-facing dashboards and operational workflows",
         "Backend endpoints designed for reliability and speed",
       ],
-      github: "https://github.com/your-username/hotel-management-system",
-      demo: "https://example.com/hotel-management-system",
+      github: "https://github.com/derosavage/hotel-management-system",
+      demo: "https://derosavage.github.io/hotel-management-system",
     },
     {
       title: "AI Agent / OpenClaw Setup",
@@ -88,8 +88,8 @@ export const siteConfig = {
         "Connected tools and prompts into usable agent pipelines",
         "Focused on operator experience, not just model output",
       ],
-      github: "https://github.com/your-username/openclaw-setup",
-      demo: "https://example.com/openclaw-setup",
+      github: "https://github.com/derosavage/openclaw-setup",
+      demo: "https://derosavage.github.io/openclaw-setup",
     },
     {
       title: "Rise & Fall Trading Bot",
@@ -101,8 +101,8 @@ export const siteConfig = {
         "Connected external data and action pipelines",
         "Prioritized observability and repeatable logic",
       ],
-      github: "https://github.com/your-username/rise-fall-bot",
-      demo: "https://example.com/rise-fall-bot",
+      github: "https://github.com/derosavage/Deriv-Rise-Fall-Bot",
+      demo: "https://derosavage.github.io/Deriv-Rise-Fall-Bot",
     },
     {
       title: "Smart Inventory / Backend System",
@@ -114,8 +114,8 @@ export const siteConfig = {
         "Supported extensible APIs for future integrations",
         "Balanced product needs with maintainable backend structure",
       ],
-      github: "https://github.com/your-username/smart-inventory-system",
-      demo: "https://example.com/smart-inventory-system",
+      github: "https://github.com/derosavage/Smart-inventory-2",
+      demo: "https://derosavage.github.io/Smart-inventory-2",
     },
   ] as Project[],
   journey: [

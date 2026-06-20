@@ -1,9 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, MapPin } from "lucide-react";
+import { ArrowRight, Github, Linkedin, MapPin, Terminal } from "lucide-react";
 import { siteConfig } from "@/data/site";
 import { Panel } from "@/components/panel";
+import { Typewriter } from "@/components/typewriter";
+import { GitHubStatus } from "@/components/github-status";
 
 export function Hero() {
   return (
@@ -11,8 +13,10 @@ export function Hero() {
       <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
         <div className="space-y-8">
           <div className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300 backdrop-blur">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-accent" />
-            <span>Operator Dashboard / Portfolio Interface</span>
+            <Terminal size={14} className="text-accent" />
+            <span className="font-mono text-xs tracking-wider">
+              $ ./portfolio --status
+            </span>
           </div>
 
           <div className="space-y-6">
@@ -30,7 +34,7 @@ export function Hero() {
 
             <div className="max-w-3xl space-y-4">
               <h2 className="text-2xl font-medium text-white md:text-3xl">
-                {siteConfig.tagline}
+                <Typewriter text={siteConfig.tagline} speed={30} />
               </h2>
               <p className="text-base leading-8 text-slate-300 md:text-lg">
                 {siteConfig.intro}
@@ -80,57 +84,30 @@ export function Hero() {
           </div>
         </div>
 
-        <Panel className="relative overflow-hidden border-accent/20 bg-white/[0.04] p-0">
-          <div className="border-b border-white/10 px-6 py-4">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">
-                  System Status
-                </p>
-                <p className="mt-2 text-lg font-medium text-white">
-                  Personal Operating State
-                </p>
-              </div>
-              <div className="flex gap-2">
-                <span className="h-3 w-3 rounded-full bg-emerald-400/80" />
-                <span className="h-3 w-3 rounded-full bg-amber-300/70" />
-                <span className="h-3 w-3 rounded-full bg-slate-500/80" />
-              </div>
-            </div>
-          </div>
-
-          <div className="relative p-6">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(97,240,207,0.16),transparent_32%)]" />
-            <div className="relative space-y-4">
-              {siteConfig.status.map((item, index) => (
-                <motion.div
-                  key={item.label}
-                  className="grid grid-cols-[140px_1fr] items-center gap-4 rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-4"
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.45, delay: 0.12 * index }}
-                >
-                  <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-slate-500">
-                    {item.label}
-                  </span>
-                  <span className="text-sm font-medium text-slate-100">
-                    {item.value}
-                  </span>
-                </motion.div>
-              ))}
-
-              <div className="rounded-2xl border border-accent/20 bg-accentSoft p-4">
-                <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-accent">
-                  Live Signal
-                </p>
-                <p className="mt-2 text-sm leading-7 text-slate-200">
-                  Shipping clean systems, connecting intelligence to product
-                  workflows, and treating code like infrastructure.
-                </p>
+          <Panel className="relative overflow-hidden border-accent/20 bg-white/[0.04] p-0">
+            <div className="border-b border-white/10 px-6 py-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">
+                    System Status
+                  </p>
+                  <p className="mt-2 text-lg font-medium text-white">
+                    Live GitHub Feed
+                  </p>
+                </div>
+                <div className="flex gap-2">
+                  <span className="h-3 w-3 animate-pulse rounded-full bg-emerald-400/80" />
+                  <span className="h-3 w-3 rounded-full bg-amber-300/70" />
+                  <span className="h-3 w-3 rounded-full bg-slate-500/80" />
+                </div>
               </div>
             </div>
-          </div>
-        </Panel>
+
+            <div className="relative p-6">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(97,240,207,0.16),transparent_32%)]" />
+              <GitHubStatus />
+            </div>
+          </Panel>
       </div>
     </section>
   );

@@ -13,7 +13,7 @@ export default function Home() {
     <main className="relative overflow-hidden">
       <BackgroundGrid />
 
-      <div className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col px-5 pb-24 pt-6 sm:px-6 lg:px-8">
+      <div className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col px-4 pb-24 pt-4 sm:px-6 lg:px-8">
         <header className="sticky top-0 z-30 mb-10 rounded-full border border-white/10 bg-slate-950/55 px-5 py-3 backdrop-blur-xl">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
         </header>
 
-        <div className="space-y-28">
+        <div className="space-y-20 md:space-y-28">
           <Reveal>
             <Hero />
           </Reveal>

@@ -4,7 +4,7 @@ import { siteConfig } from "@/data/site";
 
 export function About() {
   return (
-    <section id="about" className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+    <section id="about" className="grid gap-8 md:grid-cols-1 lg:grid-cols-[0.9fr_1.1fr]">
       <SectionHeading
         eyebrow="About"
         title="Systems thinking with product intent"

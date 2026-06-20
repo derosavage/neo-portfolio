@@ -9,8 +9,8 @@ import { GitHubStatus } from "@/components/github-status";
 
 export function Hero() {
   return (
-    <section className="relative pt-10 md:pt-16">
-      <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+    <section className="relative pt-8 md:pt-16">
+      <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-[1.15fr_0.85fr]">
         <div className="space-y-8">
           <div className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300 backdrop-blur">
             <Terminal size={14} className="text-accent" />
@@ -24,7 +24,7 @@ export function Hero() {
               <p className="font-mono text-xs uppercase tracking-[0.4em] text-accent">
                 {siteConfig.location}
               </p>
-              <h1 className="max-w-4xl text-5xl font-semibold tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
+              <h1 className="max-w-4xl text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl md:text-6xl lg:text-7xl">
                 {siteConfig.name}
               </h1>
               <p className="max-w-3xl text-lg text-slate-300 md:text-xl">

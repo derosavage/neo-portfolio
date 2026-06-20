@@ -70,7 +70,7 @@ export function GitHubStatus() {
       {liveStats.map((item, index) => (
         <motion.div
           key={item.label}
-          className="grid grid-cols-[140px_1fr] items-center gap-4 rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-4"
+          className="grid grid-cols-[100px_1fr] items-center gap-3 rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-4 sm:grid-cols-[140px_1fr] sm:gap-4"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.45, delay: 0.12 * index }}

@@ -32,7 +32,7 @@ export function ContactForm() {
         description="If you are working on a product, system, API, or AI-enabled workflow that needs thoughtful execution, let’s talk."
       />
 
-      <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
+      <div className="grid gap-6 md:grid-cols-1 xl:grid-cols-[1.15fr_0.85fr]">
         <Panel>
           <form className="space-y-5" onSubmit={handleSubmit}>
             <div className="grid gap-5 md:grid-cols-2">

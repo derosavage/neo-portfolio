@@ -5,7 +5,7 @@ import { siteConfig } from "@/data/site";
 
 export function Vision() {
   return (
-    <section id="vision" className="grid gap-8 xl:grid-cols-[0.95fr_1.05fr]">
+    <section id="vision" className="grid gap-8 md:grid-cols-1 xl:grid-cols-[0.95fr_1.05fr]">
       <SectionHeading
         eyebrow="Vision"
         title="Build technology that compounds"

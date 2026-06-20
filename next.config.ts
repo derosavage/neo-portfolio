@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   output: "export",
   reactStrictMode: true,
   trailingSlash: true,
+  basePath: "/neo-portfolio",
   outputFileTracingRoot: path.join(__dirname),
 };
 
